@@ -26,4 +26,10 @@ urlpatterns = [
     path('', redirect_to_leader, name='redirect_to_leader'),
     path('admin/', admin.site.urls),
     path('departmentleader/', include('teams.urls')),
+     # Voting functionality
+    path('vote/', include('vote.urls')),
+    # # User registration, login, profile, etc.
+    # path('users/', include('users.urls')),
+    
+    
 ]
